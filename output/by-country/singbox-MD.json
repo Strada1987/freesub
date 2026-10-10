@@ -5,21 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe",
-      "server": "34.18.31.5",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe",
+      "server": "ap2.directly.chat",
       "server_port": 443,
-      "uuid": "bd82d5e7-4395-40e1-b34e-2974eb0c8555",
+      "uuid": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZRWl48Ahw4vlnPSTMkNs6xcCEDd9Qq4AsChUp-mg7A4",
-          "short_id": "9c8748aa3f7d4219"
+        "server_name": "ap2.directly.chat",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/md/1",
+        "headers": {
+          "Host": "ap2.directly.chat"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
+        "🇲🇩 摩尔多瓦 (Moldova) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
